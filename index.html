@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma Craft Studio | Free Assets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Gemini_Generated_Image_yjwa74yjwa74yjwa.png">
+</head>
+<body>
+
+    <div id="home-page" class="page">
+        <div class="hero-content">
+            <h1>LUMA CRAFT STUDIO</h1>
+            <p>High-quality video and sound effects for editors.<br>Download everything for free.</p>
+            <button class="btn-explore" onclick="enterStudio()">Explore Now</button>
+        </div>
+    </div>
+
+    <div id="main-page" class="page">
+        <nav>
+            <div class="menu-btn" onclick="toggleSidebar()">☰ Menu</div>
+            <div class="logo">LUMA CRAFT</div>
+            <input type="text" class="search-bar" id="search" placeholder="Search assets..." onkeyup="render()">
+        </nav>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3>LIBRARY</h3>
+                <div class="nav-item" onclick="setType('video')">📹 Videos</div>
+                <div class="nav-item" onclick="setType('sound')">🎵 Sounds</div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>CATEGORIES</h3>
+                <div id="cat-links">
+                    </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+        <div class="main-content" id="content">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
